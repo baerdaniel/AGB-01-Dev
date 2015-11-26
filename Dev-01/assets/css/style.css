@@ -49,12 +49,12 @@ nav.nav-down {
 }
 
 nav.nav-up {
-    top: -1.25rem;
+    top: -1.35rem;
 }
 
 nav ul li a{
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 10px;
     text-align: center;
     width: 100%;
@@ -197,7 +197,6 @@ nav ul li a{
     z-index: 1;
 }
 
-
 .project-text {
     position: relative;
     z-index: 10;
@@ -205,12 +204,20 @@ nav ul li a{
 }
 
 .project-text header {
-    padding-top: 2rem;
+    height: calc(20vh - 3rem);
     text-align: center;
+    display: table;
+}
+
+.project-text .header-inner {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .project-text header p{
     font-size: 0.75rem;
+    padding: 0;
+    margin-top: 0.15rem;
 }
 
 .language {
@@ -230,6 +237,7 @@ nav ul li a{
 
 .page-footer .copyright {
     text-align: right;
+    font-size: 0.75rem;
 }
 
 
