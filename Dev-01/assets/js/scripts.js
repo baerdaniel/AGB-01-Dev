@@ -5,23 +5,21 @@ $(document).ready(function(){
 // alert("jquery working");
 
 	// Language Toggles –--------------------------
-	$('.text-body.english').hide();
-	$('button.deutsch').addClass('active');
+
+	$('.language button').click(function(){
+		$('.language button').removeClass('active');
+		$(this).toggleClass('active');
+		$('.text-body').hide();
+	});
 
 	$('button.deutsch').click(function(){
-		$(this).addClass('active');
-		$('button.english').removeClass('active');
-		$('.text-body.english').hide();
 		$('.text-body.deutsch').show();
 	});
 	$('button.english').click(function(){
-		$(this).addClass('active');
-		$('button.deutsch').removeClass('active');
 		$('.text-body.english').show();
-		$('.text-body.deutsch').hide();
 	});
 
-
+	$('button.deutsch').click();
 
 });
 
@@ -34,7 +32,7 @@ var navbarHeight = $('.header-menu').outerHeight();
 $(document).ready(function(){
 	$('.header-menu').mouseleave(function(){
 		$(this).removeClass('nav-down').addClass('nav-up');
-	});
+	},200);
 });
 
 $(window).scroll(function(event){
@@ -89,9 +87,9 @@ function callFlickity() {
 	  	setGallerySize: false,
 	  	// autoPlay: true,
 		  arrowShape: {
-	      x0: 20,
-	      x1: 70, y1: 20,
-	      x2: 70, y2: 20,
+	      x0: 35,
+	      x1: 70, y1: 35,
+	      x2: 70, y2: 35,
 	      x3: 70
 	    }
 	});
