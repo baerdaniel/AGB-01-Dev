@@ -13,15 +13,61 @@ $(document).ready(function(){
 	});
 
 	$('button.deutsch').click(function(){
-		$('.text-body.deutsch').show();
+		$('.text-body.deutsch').fadeIn(500);
 	});
 	$('button.english').click(function(){
-		$('.text-body.english').show();
+		$('.text-body.english').fadeIn(500);
 	});
 
 	$('button.deutsch').click();
 
+
+// NEWS IMAGES –--------------------------
+
+	// var vh = $(window).height();
+	// var delta = vh/2;
+	// var distance1 = $('#entry-1').offset().top - delta;
+	// var distance2 = $('#entry-2').offset().top - delta;
+	// var distance3 = $('#entry-3').offset().top - delta;
+
+
+	// $(window).scroll(function() {
+	//     if ( $(window).scrollTop() >= distance1 ) {
+	//         $('#entry-1').addClass('active')
+	//         $('#entry-2').removeClass('active');
+	//     }
+	//     if ( $(window).scrollTop() >= distance2 ) {
+	//     	$('#entry-1').removeClass('active')
+	//         $('#entry-2').addClass('active');
+	//         $('#entry-3').removeClass('active');
+	//     }
+	//     if ( $(window).scrollTop() >= distance3 ) {
+	//     	$('#entry-2').removeClass('active')
+	//         $('#entry-3').addClass('active');
+	//         $('#entry-4').removeClass('active');
+	//     }
+	//     else {}
+	// });
+
+
+
+
+// entry-1 to be changed when entry-1 hits top.
+// entry-2 to be changed when entry-2 hits top.
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 // HIDE NAVIGATION –--------------------------
 var didScroll;

@@ -70,8 +70,8 @@ h1, h2, h3, h4 {
 
 /* Selected text */
 
-::-moz-selection { background: lightgrey; color: #000; text-shadow: none; }
-::selection { background: lightgrey; color: #000; text-shadow: none; }
+::-moz-selection { background: WhiteSmoke; color: #000; text-shadow: none; }
+::selection { background: WhiteSmoke; color: #000; text-shadow: none; }
 
 /* Input boxes */
 
@@ -87,6 +87,25 @@ input[type=tel] {
 input:focus {
   outline: 0px;
   border:1px solid red;
+}
+
+/* Table */
+
+table,
+table tr,
+tr td,
+table tbody,
+table thead,
+table tfoot,
+table tr th
+{
+    margin:0;
+    padding:0;
+    background:none;
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-image:none;
 }
 
 /* Grid */
